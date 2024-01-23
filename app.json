@@ -3,6 +3,7 @@
     "name": "plantify",
     "slug": "plantify",
     "version": "1.0.0",
+    "scheme": "com.plantify",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -15,16 +16,21 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.plantify"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.plantify"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
